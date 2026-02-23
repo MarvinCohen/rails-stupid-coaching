@@ -1,0 +1,28 @@
+<div class="page">
+  <div class="card">
+    <header class="card__header">
+      <h1 class="title">Ask</h1>
+      <p class="subtitle">Pose une question et je te réponds 😄</p>
+    </header>
+
+    <form class="form" action="<%= answer_path %>" data-turbo="false">
+      <label class="label" for="question">Your question</label>
+      <div class="field">
+        <input
+          class="input"
+          type="text"
+          id="question"
+          name="answer"
+          placeholder="Ex: What time is it?"
+          autocomplete="off"
+          required
+        >
+        <input class="btn btn--primary" type="submit" value="Ask!">
+      </div>
+
+      <p class="hint">
+        Astuce : appuie sur <span class="kbd">Entrée</span> pour envoyer.
+      </p>
+    </form>
+  </div>
+</div>

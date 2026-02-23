@@ -1,0 +1,23 @@
+<div class="page">
+  <div class="card">
+    <header class="card__header">
+      <h1 class="title">Answer</h1>
+      <p class="subtitle">Voici ce que j’ai compris 👇</p>
+    </header>
+
+    <section class="block">
+      <p class="label">Ta question</p>
+      <p class="bubble bubble--user"><%= params[:answer] %></p>
+    </section>
+
+    <section class="block">
+      <p class="label">Réponse</p>
+      <p class="bubble bubble--bot"><%= @answer %></p>
+    </section>
+
+    <footer class="card__footer">
+      <%= link_to "← Retour", ask_path, class: "btn" %>
+      <%= link_to "Reposer une question", ask_path, class: "btn btn--ghost" %>
+    </footer>
+  </div>
+</div>
